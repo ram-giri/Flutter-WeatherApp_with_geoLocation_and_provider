@@ -10,7 +10,7 @@ class LocalDatabase {
   }
 
   Future<String?> getData() async {
-    final SharedPreferences prefs = await _prefs;
+    final prefs = await _prefs;
     return prefs.getString('location');
   }
 }
